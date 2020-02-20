@@ -1,0 +1,30 @@
+
+body #cdd{
+	width: 80%;
+	margin: auto;
+} 
+
+body .background{
+	background-image: url("../Images/background.jpg");
+	margin-top: 100px; 
+	background-repeat: no-repeat; 
+	background-position: bottom center; 
+	background-size: cover; 
+	height: 30em; 
+	position: relative; 
+	filter: blur(3px);
+}
+
+body h3{
+	width: 100%;
+	text-align: right;
+	color: green;
+	font-size: 30px;
+	font-family: "Trebuchet MS";
+}
+
+body p{
+	text-align: justify;
+	font-family: "Trebuchet MS";
+	line-height: 1.4em;
+}

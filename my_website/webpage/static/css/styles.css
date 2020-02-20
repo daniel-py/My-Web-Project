@@ -1,0 +1,173 @@
+
+header, section, article {
+	width: 80%;
+	margin: auto;
+}
+
+header, section, aside, article, footer {
+	border-right: 
+}
+
+nav {
+	position: fixed;
+	top: 0;
+	background: white;
+	width: 100%;
+	padding-top: 7px;
+}
+
+nav p {
+	width: 10%;
+	display: inline;
+}
+
+nav ul {
+	display: inline;
+	list-style: none;
+	width: 90%;
+	text-align: right;
+	float: right;
+	position: absolute;
+	padding: 0px; 
+	box-sizing: border-box;
+}
+
+nav li{
+	display: inline;
+}
+
+nav ul li:first-child {
+	padding-right: 50px;
+}
+
+nav ul li:nth-child(2) {
+	padding-right: 50px;
+}
+
+nav ul li:last-child {
+	padding-right: 20px;
+}
+
+header {
+	clear: both;
+	position: relative;
+	border-color: none;
+	border-bottom: 1px solid green;
+	border-bottom-right-radius: 10px;
+}
+
+header  h1 img{
+	
+}
+
+header h1 p {
+	display: inline;
+	position: absolute;
+	padding-left: 15px;
+	padding-bottom: 0px;
+	bottom: 0px;
+	font-family: "Book Antiqua";
+	font-size: 40px;
+	letter-spacing: 12px;
+}
+
+a {
+	text-decoration: none;
+	color: green;
+}
+
+a:hover {
+	color: black;
+}
+
+section, article {
+	font-family: "Trebuchet MS"
+}
+
+section {
+	text-align: justify;
+}
+
+section h3 {
+	color: green;
+	font-size: 20px;
+}
+
+aside {
+	position: fixed;
+	top: 150px;
+	left: ;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+aside ul {
+	list-style: none;
+	padding-left: 2px;
+}
+
+aside ul li {
+	padding-bottom: 15px;
+}
+
+footer {
+	border: 1px solid white;
+	background-image: url("../Images/background3.jpg");
+	background-repeat: ;
+	background-position: center center;
+	margin-bottom: 0px; 
+	color: silver;
+}
+
+footer .input {
+	background: none;
+	border: none;
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+	margin-left: 5px;
+	color: silver;
+}
+
+footer .div1 {
+	width: 50%;
+	float: left;
+	margin-bottom: 50px;
+	padding-right: 5px;
+	line-height: 35px;
+	padding-left: 5px;
+	box-sizing: border-box;
+}
+
+footer .div2 {
+	width: 49%;
+	min-height: 137px;
+	float: right;
+	margin-bottom: 50px;
+	position: relative;
+	box-sizing: border-box;
+}
+
+footer .div2 label {
+	top: 80px;
+	left: 50px;
+	position: absolute;
+	color: black;
+}
+
+footer .div3 {
+	clear: both;
+	text-align: center;
+	font-size: 15px;
+	font-family: cursive;
+	line-height: 4px;
+	font-size: ;
+}
+
+
+
+
+@media(max-width: 600px){
+	body {
+		width: 100%;
+		float: none;
+}

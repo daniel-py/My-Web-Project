@@ -1,0 +1,126 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<title>{% block title %} Lorem Ipsum {% endblock %} </title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+</head>
+
+<body id="onlyBody">
+
+	<nav>
+		<a href="/"><p><img src="{% static 'Images/logo2.png' %}" width="60px" class = "bl"></p></a>
+		<ul>
+			<li><a href="/about">About</a></li>
+			<li><a href="/contact_us">Contact us</a></li>
+			<li><a href="/achievements"><img src="{% static 'Images/achievement1.png' %}" width="25px">  <p>Achievements</p></a></li>
+		</ul>
+	</nav>
+
+	{% block content %}
+	<div style="margin-top: 90px"></div>
+	<header id="onlyHeader">
+		<h1>
+			<img src="{% static 'Images/logo2.png' %}" width="90px">
+			<p>My Awesome Website</p>
+		</h1>
+	</header>
+
+	<section>
+		<h3 style="margin-top: 30px">Arcu Tellus</h3>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+			Dolor suscipit vehicula nisi Nonummy libero congue cum accumsan donec nulla enim ultrices mauris est taciti vel turpis venenatis fringilla interdum pharetra nunc ullamcorper nonummy tellus congue tincidunt bibendum sed curabitur gravida rhoncus, purus imperdiet. Massa turpis. Fringilla. Dapibus aenean consectetuer at suspendisse gravida, class sem Torquent volutpat torquent malesuada integer Ac non laoreet massa interdum neque. Tempor pellentesque dui. Dui luctus cubilia scelerisque pulvinar cras.
+		</p>
+		<h3 style="margin-top: 50px">Auctor Pulvinar</h3>
+		<p>
+			Mus Cum fringilla enim faucibus accumsan dignissim mattis vitae condimentum quis suspendisse integer. Eleifend pellentesque porta morbi potenti pellentesque felis nec interdum odio vehicula torquent tincidunt congue massa fames dis posuere lectus. Ornare scelerisque inceptos. Augue ornare per eu mattis mollis laoreet viverra Sit. Suspendisse felis. Duis eleifend nullam leo sagittis non natoque habitasse sagittis hendrerit leo vitae velit inceptos leo dictum luctus justo dictum congue. Diam parturient porttitor consectetuer nostra a convallis aptent Phasellus pellentesque.
+		</p>
+		<h3 style="margin-top: 50px">Laoreet Enim</h3>
+		<p>
+			Blandit lectus. Magnis blandit praesent non elementum sociis magnis duis etiam luctus. Commodo condimentum augue. Vel fusce dictumst inceptos magna natoque enim gravida. Cursus dis.
+			Suscipit. Montes praesent nascetur faucibus rutrum facilisis facilisis primis enim amet sollicitudin litora hendrerit facilisi. Mollis senectus. Nunc maecenas elementum Nam phasellus.
+			Molestie volutpat. Vivamus, laoreet ad tincidunt est netus euismod, aliquet cum duis. Magnis leo, metus. Bibendum convallis laoreet consequat. Scelerisque. Tincidunt lorem scelerisque Risus turpis maecenas lobortis fringilla orci. Taciti convallis, vitae pretium. Adipiscing sociis viverra. Enim habitasse.
+			Commodo dictum morbi porta orci sociis suscipit primis orci at ultrices netus hac. Placerat.
+		</p>
+		<h3 style="margin-top: 50px">Tricies Lobortis</h3>
+		<p>
+			Etiam iaculis magna dolor magna lacinia in nunc consectetuer nisi purus quam. Platea faucibus nisl ac dis sit fusce. Bibendum quis neque nisl etiam sed nisl per feugiat dignissim nunc rhoncus est iaculis.
+			Etiam ultricies lobortis fermentum nascetur erat convallis fermentum habitant semper enim, aliquet. Hendrerit sapien aenean. Nibh.
+			Mattis aenean ridiculus, nunc lectus lobortis cras pellentesque arcu vulputate maecenas at euismod nisl.Vulputate feugiat consequat commodo aenean tristique pretium. Ultricies sodales aliquet nascetur turpis. taciti imperdiet dui nisl. Senectus curae; integer.
+
+		</p>
+	</section>
+
+	<article>
+		<div style="margin-top: 70px"></div>
+		<h4>The founder of this institution said:</h5>
+		<blockquote>
+				<em>Integer quis torquent nam interdum porta commodo nibh pharetra enim tellus eleifend dictum. Volutpat sodales eget nec sollicitudin tristique, habitasse integer dignissim laoreet tempus fames facilisis erat. Fusce sodales tempus fusce iaculis feugiat.</em>
+				<p>
+					<strong><a href="/achievements" target="_blank">Click here</a> to see our sucess story</strong>
+				</p>
+		</blockquote>
+	</article>
+
+	<aside>
+		<ul>
+			<li><a href="https://www.instagram.com/remithefirst" target="_blank"><img src="{%static 'Images/instagram.png'%}" width="30px"></a></li>
+			<li><a href="https://www.facebook.com/Oluremi%20Daniel" target="_blank"><img src="{%static 'Images/facebook.png' %}" width="25px"></a></li>
+			<li><a href="https://www.twitter.com/remithefirst" target="_blank"><img src="{%static 'Images/twitter.png'%}" width="25px"></a></li>
+		</ul>
+
+	</aside>
+
+	{% endblock %}
+
+	<div style="margin-top: 250px"></div>
+
+	<footer>
+		<div class="div1">
+			<p><strong>Sign up for our newsletter today!</strong></p>
+
+			<form action="#" class = "footee">
+				<div>
+					<label> 
+						Name: <input class="input" type="text" name="name" placeholder="What should we call you?">
+					</label>
+				</div>
+				<div>
+					<label>
+						E-mail: <input class="input" type="email" name="email" placeholder="you@domain.com">
+					</label>
+				</div>
+				<div>
+					<label>
+						How many e-mails would you want in a week?
+						<select>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="none">None</option>
+						</select>
+					</label>
+				</div>
+				<input type="submit" name="submit" value="Welcome">
+			</form>
+		</div>
+		
+		<div class ="div2">
+			<label class = "speak">
+				You want to say something?
+				<p><textarea class="input" placeholder="Type out your worries"></textarea></p>
+			</label>
+		</div>
+
+
+		<div class="div3">
+			<strong><p>All rights reserved.</p>
+			<p>Designed by Oluremi Daniel &copy; 2019</p></strong>
+		</div>	
+	</footer>
+
+</body>
+</html>

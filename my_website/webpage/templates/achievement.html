@@ -1,0 +1,39 @@
+{% extends 'index.html' %}
+{% load static %}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{% block title %} Lorem Ipsum: Achievements {% endblock %}</title>
+{% block content %}
+	<style type="text/css">
+		body article {
+			width: 80%;
+			margin: auto;
+		}
+	</style>
+</head>
+
+
+<body>
+	<div style="margin-top: 100px"></div>
+	<article>	
+		<h3>From bottom to top, here's how we grew: </h3>
+		{% for pst in posts %}
+			<div style="padding-top: 30px">
+				<img src="{{ pst.image.url }}" width="60%" style="{padding-bottom: 0px; margin-bottom: 0px;}">
+				<p style="{padding-top: 0px; margin-top: 0px;}">{{ pst.title }}</p>
+			</div>
+		{% endfor %}
+	</article>
+
+
+
+
+	<div style="margin-bottom: 200px"></div>
+{% endblock %}
+</body>
+
+
+</html>

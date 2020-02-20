@@ -1,0 +1,41 @@
+{% extends 'index.html' %}
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{% block title %} Lorem Ipsum: Contact us {% endblock %} </title>
+{% block content %}
+	<style type="text/css">
+		body .center {
+			width: 50%;
+			margin: auto;
+			color: green;
+		}
+		body .middle {
+			width: 80%;
+			margin: auto;
+		}
+	</style>
+</head>
+
+<body>
+	<div style="margin-top: 100px !important" class="center">
+		<br> <br> <br> 
+		<div style="position: relative;">
+			<img src="{% static 'Images/phone.png'%}" width=20%> <img src="{% static 'Images/whatsapp.png'%}" width=20% style="padding-left: 30px"><h1 style="position: absolute; display : inline; padding-top: 30px; padding-left: 30px;"> +234(0) 70 8664 3074</h1>
+		</div>
+
+		<br> <br> <br> <br> <br> <br> <br> <br> 
+		<div style="position: relative" class="middle">
+			<img src="{% static 'Images/email.png'%}" width="24%"> <h1 style="display : inline; padding-left: 50px; padding-top: 30px; position: absolute;">doluremi19@gmail.com</h1>
+		</div>
+
+		<br> <br> <br> <br> <br> <br> <br> <br> 
+		<div style="position: relative" class="middle">
+			<img src="{% static 'Images/location.png'%}" width="24%"> <h1 style="position: absolute; padding-top: 30px; display: inline; padding-left: 50px;">23, Bay Avenue, Ikoyi, Lagos.</h1>
+		</div>
+	</div>
+{% endblock %}
+</body>
+</html>
